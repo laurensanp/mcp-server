@@ -25,7 +25,7 @@ Es wird dringend empfohlen, **uv** f체r die Installation und Verwaltung der Abh�
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
 
-    # Oder f체r Windows (falls curl nicht verf체gbar):
+    **Oder f체r Windows (falls curl nicht verf체gbar):**
     ```bash
     pip install uv
     ```

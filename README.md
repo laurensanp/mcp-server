@@ -23,8 +23,11 @@ Es wird dringend empfohlen, **uv** für die Installation und Verwaltung der Abh�
     Stellen Sie sicher, dass `uv` auf Ihrem System installiert ist. Falls nicht, können Sie es wie folgt installieren:
     ```bash
     curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
     # Oder für Windows (falls curl nicht verfügbar):
-    # pip install uv
+    ```bash
+    pip install uv
     ```
     Starten Sie Ihr Terminal neu, damit der `uv`-Befehl verfügbar ist. Überprüfen Sie die Installation mit `uv --version`.
 

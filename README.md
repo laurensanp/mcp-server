@@ -101,4 +101,4 @@ Das `utils/`-Verzeichnis enthält wiederverwendbare Hilfsfunktionen (z.B. `file_
 ## Danksagungen
 Dieses Projekt basiert auf der Inspiration und den Erkenntnissen von [@llm-guy](https://github.com/llm-guy).
 
-["Building a Basic MCP Server with Python"](https://medium.com/data-engineering-with-dremio/building-a-basic-mcp-server-with-python-4c34c41031ed)
+[Building a Basic MCP Server with Python](https://medium.com/data-engineering-with-dremio/building-a-basic-mcp-server-with-python-4c34c41031ed)

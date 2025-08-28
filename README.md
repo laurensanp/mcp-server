@@ -55,7 +55,7 @@ Um den MCP-Server zu starten, navigieren Sie zum Projekt-Root-Verzeichnis und f√
 ```bash
 uv run main.py
 ```
-Der Server wartet nun auf eine Verbindung von einem Client wie LM Studio. Jedoch ist der Sever nicht dauerhaft anzuhaben, da LM Studio ihn auch automatisch startet (im hintergrund).
+Der Server wartet nun auf eine Verbindung von einem Client wie LM Studio. Allerdings muss der Server nicht dauerhaft laufen, da LM Studio ihn bei Bedarf auch automatisch (im Hintergrund) starten kann.
 
 ### Integration mit LM Studio
 Um LM Studio mit Ihrem MCP-Server zu verbinden, m√ºssen Sie die Konfigurationsdatei von LM Studio anpassen.

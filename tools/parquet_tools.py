@@ -3,10 +3,10 @@ from utils.file_reader import read_parquet_summary
 @mcp.tool()
 def summarize_parquet_file(filename: str) -> str:
     """
-    Summarize a Parquet file by reporting its number of rows and columns.
+    Gibt eine Zusammenfassung einer Parquet-Datei zurück, indem die Anzahl der Zeilen und Spalten angegeben wird.
     Args:
-        filename: Name of the Parquet file in the /data directory (e.g., 'sample.parquet')
+        filename: Name der Parquet-Datei im /data Verzeichnis (z.B. 'sample.parquet')
     Returns:
-        A string describing the file's dimensions.
+        Ein String, der die Dimensionen der Datei beschreibt.
     """
     return read_parquet_summary(filename)

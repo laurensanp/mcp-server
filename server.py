@@ -1,3 +1,3 @@
 from mcp.server.fastmcp import FastMCP
 # This is the shared MCP server instance
-mcp = FastMCP("mc-server")
+mcp = FastMCP("mcp-server")

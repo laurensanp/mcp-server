@@ -5,11 +5,11 @@ import subprocess
 def start_bot() -> str:
 
     """
-    Start for the Discord Bot.
+    Start des Discord Bottes.
     Args:
         None
     Returns:
-        A string with possible Errors or an confirmation for the start of the bot.
+        Ein string mit moeglichen Errors oder einer Bestaetigung fuer den Start des Discord Bottes.
     """
 
     python_executable = r"C:\Users\Laurens\AppData\Local\Programs\Python\Python313\python.exe"
@@ -19,8 +19,8 @@ def start_bot() -> str:
             "cmd.exe", "/c", "start", "cmd.exe", "/k",
             f'{python_executable} {script_path}'
         ], check=True)
-        return "Garmin program started in a new terminal window."
+        return "Garmin Programm wurde in einem neuem Fenster geoefnett."
     except subprocess.CalledProcessError as e:
-        return(f"Error starting Garmin program: {e}")
+        return(f"Error beim starten vom Garmin Programm: {e}")
     except FileNotFoundError:
-        return(f"Error: Python executable not found at {python_executable}")
+        return(f"Error: Python Datei nicht gefuenden: {python_executable}")

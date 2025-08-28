@@ -1,26 +1,26 @@
 import pandas as pd
 from pathlib import Path
-# Base directory where our data lives
+
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 def read_csv_summary(filename: str) -> str:
     """
-    Read a CSV file and return a simple summary.
+    Lese eine CSV Datei und gebe eine einfache zusammenfassung zurueck.
     Args:
-        filename: Name of the CSV file (e.g. 'sample.csv')
+        filename: Name der CSV Datei (e.g. 'sample.csv')
     Returns:
-        A string describing the file's contents.
+        Ein string, welcher den Inhalt der Datei beschreibts.
     """
     file_path = DATA_DIR / filename
     df = pd.read_csv(file_path)
-    return f"CSV file '{filename}' has {len(df)} rows and {len(df.columns)} columns."
+    return f"CSV Datei '{filename}' hat {len(df)} Zeilen und {len(df.columns)} Spalten."
 def read_parquet_summary(filename: str) -> str:
     """
-    Read a Parquet file and return a simple summary.
+    Lese eine Parquet Datei und gebe eine einfache zusammenfassung zurueck.
     Args:
-        filename: Name of the Parquet file (e.g. 'sample.parquet')
+        filename: Name der Parquet Datei (e.g. 'sample.parquet')
     Returns:
-        A string describing the file's contents.
+       Ein string, welcher den Inhalt der Datei beschreibts.
     """
     file_path = DATA_DIR / filename
     df = pd.read_parquet(file_path)
-    return f"Parquet file '{filename}' has {len(df)} rows and {len(df.columns)} columns."
+    return f"Parquet Datei '{filename}' hat {len(df)} Zeilen und {len(df.columns)} Spalten."

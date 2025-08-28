@@ -24,11 +24,15 @@ Es wird dringend empfohlen, **uv** für die Installation und Verwaltung der Abh�
     ```bash
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
-
     **Oder für Windows (falls curl nicht verfügbar):**
     ```bash
     pip install uv
     ```
+    **or**
+    ```bash
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    ```
+    
     Starten Sie Ihr Terminal neu, damit der `uv`-Befehl verfügbar ist. Überprüfen Sie die Installation mit `uv --version`.
 
 2.  **Repository klonen:**
@@ -95,5 +99,6 @@ Die Tools in diesem Verzeichnis (`csv_tools.py`, `parquet_tools.py`) sind primä
 Das `utils/`-Verzeichnis enthält wiederverwendbare Hilfsfunktionen (z.B. `file_reader.py`) die von den Tools verwendet werden, um Daten zu verarbeiten und zusammenzufassen.
 
 ## Danksagungen
-Dieses Projekt basiert auf der Inspiration und den Erkenntnissen von @llm-guy.
-GitHub-Profil: [@llm-guy](https://github.com/llm-guy)
+Dieses Projekt basiert auf der Inspiration und den Erkenntnissen von [@llm-guy](https://github.com/llm-guy).
+
+["Building a Basic MCP Server with Python"](https://medium.com/data-engineering-with-dremio/building-a-basic-mcp-server-with-python-4c34c41031ed)

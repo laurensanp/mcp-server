@@ -7,6 +7,7 @@ import pytz
 def get_weekly_anime_releases() -> str:
     """
     Gibt eine Liste zurück mit Anime-Erscheinungen der letzten 3 vergangenen Tage und 3 kommenden Tage.
+    
     Returns:
         Eine Liste mit Animes, Datum, Uhrzeit, Anbieter. Kann aber mögliche Errors beinhalten.
     """
@@ -15,7 +16,7 @@ def get_weekly_anime_releases() -> str:
     try:
         local_tz = pytz.timezone(local_timezone_str)
     except Exception as e:
-        return f"Ungültige Zeitzone: {local_timezone_str}. Fehler: {e}"
+        return f"Ungültige Zeitzone: {local_timezone_str}. Fehler: {e}" 
 
     now_local = datetime.now(local_tz)
 
@@ -56,7 +57,7 @@ def get_weekly_anime_releases() -> str:
     output = []
 
     try:
-        test_resp = requests.get("https://graphql.anilist.co")
+        test_resp = requests.post(url, json={'query': 'query { Page { pageInfo { total } } }'})
         if test_resp.status_code not in (200, 400, 405):
             return "AniList API ist derzeit nicht erreichbar."
     except Exception as e:
